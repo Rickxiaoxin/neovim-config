@@ -1,0 +1,7 @@
+-- Options
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.signcolumn = 'yes'
+
+-- Colorscheme
+vim.cmd("colorscheme catppuccin")
