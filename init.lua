@@ -14,5 +14,8 @@ vim.o.expandtab = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+-- Minimal number of screen lines to keep above and below the cursor
+vim.o.scrolloff = 5
+
 -- Colorscheme
 vim.cmd("colorscheme catppuccin")
