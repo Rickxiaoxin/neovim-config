@@ -26,6 +26,12 @@ vim.api.nvim_create_autocmd('UIEnter', {
   end,
 })
 
+-- Diagnostic config
+vim.diagnostic.config({
+  virtual_text = true,
+  virtual_lines = false,
+})
+
 -- Plugins
 -- See `:h vim.pack`
 vim.pack.add({
