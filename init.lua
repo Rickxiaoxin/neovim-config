@@ -26,5 +26,15 @@ vim.api.nvim_create_autocmd('UIEnter', {
   end,
 })
 
+-- Plugins
+-- See `:h vim.pack`
+vim.pack.add({
+  { src = 'https://github.com/neovim/nvim-lspconfig' },
+})
+
+-- LSP
+vim.lsp.enable({ 'basedpyright' })
+
 -- Colorscheme
 vim.cmd("colorscheme catppuccin")
+
