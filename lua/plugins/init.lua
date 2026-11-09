@@ -19,13 +19,18 @@ vim.pack.add({
   { src = gh('neovim/nvim-lspconfig') },
 
   -- Mason
-  { src = gh('mason-org/mason.nvim.git') },
-  { src = gh('mason-org/mason-lspconfig.nvim.git') },
+  { src = gh('mason-org/mason.nvim') },
+  { src = gh('mason-org/mason-lspconfig.nvim') },
 
   -- Tree sitter
-  { src = gh('nvim-treesitter/nvim-treesitter.git') },
+  { src = gh('nvim-treesitter/nvim-treesitter') },
+
+  -- Fuzzy finder
+  { src = gh('ibhagwan/fzf-lua') },
+
 })
 
 require("plugins.lsp")
 require("plugins.treesitter")
+require("plugins.fzf")
 
