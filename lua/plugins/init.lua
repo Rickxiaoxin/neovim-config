@@ -10,16 +10,20 @@ local hooks = function(ev)
 end
 vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
 
+local gh = function(x)
+  return 'https://github.com/' .. x
+end
+
 vim.pack.add({
   -- LSP
-  { src = 'https://github.com/neovim/nvim-lspconfig' },
+  { src = gh('neovim/nvim-lspconfig') },
 
   -- Mason
-  { src = 'https://github.com/mason-org/mason.nvim.git' },
-  { src = 'https://github.com/mason-org/mason-lspconfig.nvim.git' },
+  { src = gh('mason-org/mason.nvim.git') },
+  { src = gh('mason-org/mason-lspconfig.nvim.git') },
 
   -- Tree sitter
-  { src = 'https://github.com/nvim-treesitter/nvim-treesitter.git' },
+  { src = gh('nvim-treesitter/nvim-treesitter.git') },
 })
 
 require("plugins.lsp")
