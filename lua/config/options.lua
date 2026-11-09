@@ -18,6 +18,9 @@ vim.o.scrolloff = 5
 -- Sync clipboard between OS and Neovim.
 vim.opt.clipboard:append({ 'unnamedplus' })
 
+-- Open all fold
+vim.wo.foldlevel = 99
+
 -- Colorscheme
 vim.cmd("colorscheme catppuccin")
 
