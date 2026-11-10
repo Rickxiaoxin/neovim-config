@@ -1,3 +1,7 @@
+-- Set the <Leader> and <LocalLeader>
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- Display line number and sign in front of each line
 vim.o.number = true
 vim.o.relativenumber = true
