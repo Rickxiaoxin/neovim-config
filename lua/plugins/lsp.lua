@@ -1,4 +1,4 @@
-tools = { 'tree-sitter-cli' }
+tools = { }
 
 require("mason").setup({})
 
