@@ -54,7 +54,7 @@ vim.diagnostic.config {
 }
 
 -- Build hooks
-local hooks = function(ev)
+local plugins_build = function(ev)
   local name, kind = ev.data.spec.name, ev.data.kind
   if name == 'nvim-treesitter' and kind == 'update' then
     if not ev.data.active then
@@ -63,7 +63,7 @@ local hooks = function(ev)
     vim.cmd('TSUpdate')
   end
 end
-vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
+vim.api.nvim_create_autocmd('PackChanged', { callback = plugins_build })
 
 local gh = function(x)
   return 'https://github.com/' .. x
