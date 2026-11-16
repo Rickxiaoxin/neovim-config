@@ -47,11 +47,12 @@ vim.o.confirm = true
 
 
 -- Diagnostic Config & Keymaps
---  See `:help vim.diagnostic.Opts`
 vim.diagnostic.config {
   virtual_text = true,
   virtual_lines = false,
 }
+
+vim.keymap.set('n', '<Esc>', '<Cmd>nohlsearch<CR>')
 
 -- Build hooks
 local plugins_build = function(ev)
