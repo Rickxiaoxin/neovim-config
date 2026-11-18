@@ -116,6 +116,7 @@ local parser = {
   'vimdoc',
   'query',
   'python',
+  'latex',
 }
 
 require('nvim-treesitter').setup({})
