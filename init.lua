@@ -83,6 +83,8 @@ vim.pack.add({
 
   -- Fuzzy finder
   { src = gh('ibhagwan/fzf-lua') },
+
+  { src = gh('lervag/vimtex') }
 })
 
 -- LSP Configuration
